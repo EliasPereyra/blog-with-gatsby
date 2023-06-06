@@ -45,4 +45,4 @@ export const query = graphql`
   }
 `;
 
-export const HEAD: React.FC = () => <Seo title="My posts about software" />;
+export const HEAD = () => <Seo title="My posts about software" />;
