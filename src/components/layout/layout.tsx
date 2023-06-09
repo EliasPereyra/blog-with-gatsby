@@ -1,7 +1,8 @@
 import * as React from "react";
-import Navbar from "./navbar";
-import { useSiteMetadata } from "../hooks/useSiteMetadata";
+import Navbar from "../navbar";
+import { useSiteMetadata } from "../../hooks/useSiteMetadata";
 
+import Footer from "../footer/footer";
 import "./layout.module.css";
 
 export default function Layout({ pageTitle, children }: { pageTitle: string }) {
@@ -14,6 +15,7 @@ export default function Layout({ pageTitle, children }: { pageTitle: string }) {
         <small>{siteTitle}</small>
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
